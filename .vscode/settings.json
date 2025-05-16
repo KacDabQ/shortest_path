@@ -1,0 +1,13 @@
+{
+  "python.testing.pytestArgs": ["shortest_path"],
+  "python.testing.unittestEnabled": true,
+  "python.testing.pytestEnabled": false,
+  "python.testing.unittestArgs": [
+    "-v",
+    "-s",
+    "./shortest_path",
+    "-p",
+    "*_test.py"
+  ],
+  "python.analysis.extraPaths": ["./shortest_path/src"]
+}
