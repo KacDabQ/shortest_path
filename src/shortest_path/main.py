@@ -13,19 +13,19 @@ inputs = [
 ]
 
 
-def create_graph(inputs):
+def create_graph(graph_data):
     result = {}
-    for source, destination, weight in inputs:
+    for source, destination, weight in graph_data:
         if result.get(source) is None:
             result[source] = {}
         if result.get(destination) is None:
             result[destination] = {}
         result[source][destination] = weight
         result[destination][source] = weight
-    print(result)
+    return result
 
 def main():
-    create_graph(inputs)
+    print(create_graph(inputs))
 
 if __name__ == "__main__":
     main()
